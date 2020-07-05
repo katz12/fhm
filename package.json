@@ -1,0 +1,27 @@
+{
+  "name": "fhm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && rimraf images && tsc",
+    "start": "npm run build && node dist/src/app.js",
+    "test": "npm run build && node dist/src/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.0.14",
+    "@types/sharp": "^0.25.0",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "ts-essentials": "^7.0.0",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "node-tesseract-ocr": "^2.0.0",
+    "screenshot-desktop": "^1.12.1",
+    "sharp": "^0.25.4"
+  }
+}
